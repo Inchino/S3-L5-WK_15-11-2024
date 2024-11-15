@@ -179,7 +179,7 @@ me.skills.push("Angular")
 */
 
 me.skills.pop();
-console.log(me.skills);
+//console.log(me.skills);
 
 // Funzioni
 
@@ -448,10 +448,12 @@ console.log(searchAndDivide(movies, "Lord"));
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
-const removeIndex = function (array, year) {
-  return array.findIndex((elem) => parseInt(elem.Year) === year);
+const removeIndex = function (i) {
+  movies.splice(i,1);
+
+  return movies
 };
-console.log(removeIndex(movies, 2012));
+//console.log(removeIndex(6));
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
